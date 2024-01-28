@@ -1,0 +1,16 @@
+*****************************GIT Commands***********************************
+
+*git init----> to initialize project to git
+*git branch -M main---> changing default branch name from master to main
+*git add . --->addng all our files which needs to go inside the commit
+*git commit -m "commit message like here Episode1 code practicing"---> to commit code
+*git remote add origin https://github.com/Diksha0409/Namaste-React.git---
+>///this step needs to be done once/// to setup our local to git repository
+*git push origin main---> pushing to code to origin of main branch
+
+#########bELOW two git config are done to login git for first time when we get 
+error author ientity unknown###################################
+*git config --global user.name "diksha0409"
+*git config --global user.email "diksparashar22@mail.com"
+
+
