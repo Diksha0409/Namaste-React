@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <!--href to be written not src-->
+    <title>Namaste React</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css"> <!--href to be written not src-->
-    <title>Namaste React</title>   
-</head>
-
-<body>
-    <h1>top of root</h1>
+  <body>
     <div id="root">
-        <h1>Hello Diksha!!</h1>
-        <!--<h1>Hello World</h1>--> <!--created Hello Worl with Baisc HTML-->
+      <h1>Not Rendered</h1>
+      <!--<h1>Hello World</h1>-->
+      <!--created Hello Worl with Baisc HTML-->
     </div>
-    <h1>below of root</h1>
+
     <!--<script>
         //creating Hello World with JAVASCRIPT!!
         const heading = document.createElement("h1");
@@ -25,8 +25,10 @@
     </script>-->
 
     <!--Below two script are CDN React links for importing React and ReactDOM to our project.-->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!--script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script-->
+    <!--as we have now installed React & React DOM from NPM no need for CDN link 
+        also not god practice to use them-->
 
     <!--creating Hello World with React!!-->
     <!--<script>
@@ -34,9 +36,8 @@
         const root = ReactDOM.createRoot(document.getElementById("root"));
         root.render(heading);
     </script>-->
-    <script src="./App.js"></script>
-    <script src="./NestedApp.js"></script> <!--creating React JS file externally and calling in main file-->
-
-</body>
-
+    <!--script src="./App.js"></script-->
+    <script type="module" src="./App.js"></script>
+    <!--creating React JS file externally and calling in main file-->
+  </body>
 </html>
